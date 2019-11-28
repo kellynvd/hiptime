@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :find_item, only: %i[show edit update destroy, complete]
+  before_action :find_item, only: %i[show edit update destroy complete]
 
   def index
     return unless user_signed_in?
